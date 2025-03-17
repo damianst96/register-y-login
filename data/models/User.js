@@ -13,7 +13,7 @@
 // const { validationResult } = require('express-validator');
 
 module.exports = function(sequelize, dataTypes){
-    let alias = "Users";
+    let alias = "User";
     let cols = {
         id: {
             type: dataTypes.INTEGER,

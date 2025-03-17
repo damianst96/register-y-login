@@ -1,7 +1,7 @@
 const mainController = require("../controllers/mainController");
 const express = require("express");
 const router = express.Router();
-const User = require("../models/User");
+const User = require("../data/models/User");
 
 /* MIDDLEWARES */
 const validationRegister = require("../middlewares/registerMW");

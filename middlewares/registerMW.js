@@ -8,6 +8,9 @@ const validationRegister = [
     .isEmail().withMessage("Debes colocar un e-mail válido").bail(),
 
     check("password").notEmpty().withMessage("Debes completar la contraseña").bail()
+    .isLength({min: 5}).withMessage("La contraseña debe tener como mínimo 5 caracteres").bail(),
+
+    check("repPassword").notEmpty().withMessage("Debes reintroducir la contraseña").bail()
     .isLength({min: 5}).withMessage("La contraseña debe tener como mínimo 5 caracteres").bail()
 ]
 

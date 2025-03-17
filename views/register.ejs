@@ -34,6 +34,12 @@
             <div class="feedback"><%= errors.password.msg %></div>
         <% } %>
 
+        <label for="">Repetir contraseña</label>
+        <input type="password" name="repPassword" placeholder="Vuelva a introducir su Contraseña"><br>
+        <% if (locals.errors && errors.repPassword) { %>
+            <div class="feedback"><%= errors.repPassword.msg %></div>
+        <% } %>
+
         <button type="submit">Registrarse</button>
         <!-- <input type="submit" name="register" value="Registrarse"> -->
 
